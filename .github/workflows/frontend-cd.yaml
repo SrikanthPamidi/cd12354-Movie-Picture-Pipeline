@@ -80,7 +80,7 @@ jobs:
           ECR_REPOSITORY: frontend
           IMAGE_TAG: ${{ steps.vars.outputs.sha_short }}
         run: |
-          docker build --build-arg=REACT_APP_MOVIE_API_URL=http://localhost:5000 \
+          docker build --build-arg=REACT_APP_MOVIE_API_URL=http://a46c01feff07d4182bee1abb62b91239-2068872391.us-east-1.elb.amazonaws.com \
             --tag=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
