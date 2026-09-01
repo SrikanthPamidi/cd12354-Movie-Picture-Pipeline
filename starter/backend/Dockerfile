@@ -10,13 +10,15 @@ RUN apk update && \
   build-base \
   gcc \
   linux-headers \
+    musl-dev \
   openssl \
   libffi-dev \
   && pip install pipenv
 
 RUN mkdir -p /var/www/app && mkdir /app
 
-COPY Pipfile* /app
+COPY Pipfile* /app/
+ENV CFLAGS="-std=gnu17"
 RUN cd /app && pipenv install --system --deploy
 
 COPY . /app
