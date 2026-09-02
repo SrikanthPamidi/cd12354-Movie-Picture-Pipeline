@@ -410,3 +410,18 @@ kustomize build | kubectl apply -f -
 ## License
 
 [License](LICENSE.md)
+
+## Deployment Verification
+
+### Frontend
+Live URL : http://a3c786b4346694bf4aee7545901439d2-1653744418.us-east-1.elb.amazonaws.com
+
+![Frontend Movie List]
+
+### Backend
+Live URL : http://a46c01feff07d4182bee1abb62b91239-2068872391.us-east-1.elb.amazonaws.com/movies
+
+![Backend Movie List JSON]
+
+### CI/CD Workflows
+All four GitHub Actions workflows (frontend-ci, backend-ci, frontend-cd, backend-cd) have been run and pass successfully — see the [Actions tab](../../actions) for run history.
