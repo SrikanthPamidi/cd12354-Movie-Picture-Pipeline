@@ -414,14 +414,16 @@ kustomize build | kubectl apply -f -
 ## Deployment Verification
 
 ### Frontend
-Live URL : http://a3c786b4346694bf4aee7545901439d2-1653744418.us-east-1.elb.amazonaws.com
 
 ![Frontend Movie List]
+<img width="1916" height="532" alt="Screenshot 2026-09-01 173358" src="https://github.com/user-attachments/assets/37b8b0a7-8e97-465a-889e-73734d7dfcfc" />
+
 
 ### Backend
-Live URL : http://a46c01feff07d4182bee1abb62b91239-2068872391.us-east-1.elb.amazonaws.com/movies
 
 ![Backend Movie List JSON]
+<img width="1042" height="438" alt="Screenshot 2026-09-01 172300" src="https://github.com/user-attachments/assets/bb9cc6b6-3be5-41fb-b8c5-73713935b33f" />
+
 
 ### CI/CD Workflows
 All four GitHub Actions workflows (frontend-ci, backend-ci, frontend-cd, backend-cd) have been run and pass successfully — see the [Actions tab](../../actions) for run history.
